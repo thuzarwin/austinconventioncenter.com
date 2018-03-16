@@ -2,7 +2,7 @@
   background-image: image_url("#{$site}-hero.jpg");
   background-position: center;
   background-size: cover;
-
+  position: relative;
   height: 30rem;
 
   @media screen and (min-width: $large-screen) {
@@ -10,7 +10,19 @@
   }
 
   .acc-button {
-    color: $color-white;
+    background: rgba(0, 0, 0, .2);
+    border: 2px solid $acc-color-gray-light;
+    bottom: 2rem;
+    color: #fff;
+    display: inline-block;
+    font-size: $lead-font-size;
+    left: 50%;
+    margin-left: -10rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: absolute;
+    text-align: center;
+    width: 20rem;
   }
 }
 
