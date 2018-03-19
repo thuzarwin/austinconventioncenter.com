@@ -9,20 +9,29 @@
     height: 60rem;
   }
 
+  #hero_button {
+    bottom: 2rem;
+    font-size: $lead-font-size;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
   .acc-button {
     background: rgba(0, 0, 0, .5);
     border: 2px solid $acc-color-white;
-    bottom: 2rem;
+//     bottom: 2rem;
     color: $acc-color-white;
     display: inline-block;
-    font-size: $lead-font-size;
-    left: 50%;
-    margin-left: -10rem;
+//     font-size: $lead-font-size;
+//     left: 50%;
+//     margin-left: -10rem;
     padding-left: 1em;
     padding-right: 1em;
-    position: absolute;
-    text-align: center;
-    width: 20rem;
+    width: auto;
+//     position: absolute;
+//     text-align: center;
+//     width: 20rem;
   }
 }
 
