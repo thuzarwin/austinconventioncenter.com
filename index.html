@@ -6,7 +6,12 @@ layout: default
 {% assign hero_image = contentful.files.first %}
 
 <section class="acc-hero"{% if hero_image %} style="background-image: url({{ hero_image.url }});"{% endif %}>
-  <a href="#" class="acc-button">Lorem ipsum</a>
+  {% assign hero_menu = contentful.sidebarBlocks | first %}
+  {% for item in hero_menu.items %}
+    {% assign doc = item | find_document %}
+    {% assign url = item.url | default: doc.url %}
+    <a href="{{ url }}" class="acc-button">{{ item.title }}</a>
+  {% endfor %}
   <div class="usa-grid-full">
   </div>
 </section>
